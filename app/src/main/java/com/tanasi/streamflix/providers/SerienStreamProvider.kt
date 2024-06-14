@@ -259,7 +259,7 @@ object SerienStreamProvider : Provider {
             val videoUrl = (serverAfterRedirect.raw() as okhttp3.Response).request.url
             var videoUrlString = videoUrl.toString()
             if (it.selectFirst("h4")?.text() == "VOE")
-                videoUrlString = "https://voe.sx" + videoUrl.encodedPath
+                videoUrlString = "https://loriwithinfamily.com" + videoUrl.encodedPath
 
             Video.Server(
                 id = videoUrlString,
